@@ -1,0 +1,146 @@
+@CHARSET "ISO-8859-1";
+
+
+.FormDiv {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  color: #2a2a2a;
+  max-width: 100%;
+  margin: 0 auto 2%;
+  padding: 2% 4% 2% 4%;
+  text-align: center;
+}
+
+.FormDiv .FullSizeElement {
+  outline: 0;
+  background: #f2f2f2;
+  width: 90%;
+  border: 0;
+  padding: 0.5%;
+  box-sizing: border-box;
+  border-style:solid;
+  border-width:thin;
+  border-color:#c0c0c0;
+  text-align: center;
+}
+
+.ElementDiv{
+	padding: 1%;
+	text-align: center;
+}
+
+
+
+.ui-selectmenu-button.ui-button{
+	text-align: center;
+}
+
+.ui-widget{
+	font-family: 'Montserrat', sans-serif;
+	font-size: inherit;
+	font-weight: inherit;
+	color: #2a2a2a;
+	
+}
+
+.dropDownLable{
+	display: none;
+}
+
+.FormDiv .HalfSizeElement {
+  outline: 0;
+  background: #f2f2f2;
+  width: 45%;
+  border: 0;
+  padding: 0.5%;
+  box-sizing: border-box;
+  border-style:solid;
+  border-width:thin;
+  border-color:#c0c0c0;
+  text-align: center;
+}
+
+
+.ElementDiv .fLable{
+	font-size:70%;
+	margin-left:0.25%;
+	padding-left:1%;
+	padding-right:1%;
+	margin-top:-0.5%;
+	background: #f2f2f2;
+	position: absolute;
+	color: #000000;
+	z-index: 10;
+}
+
+#ErrorMessage{
+	font-size:110%;
+	margin:2%;
+	padding:2%;
+	color: red;
+	background:none;
+	position: relative;
+}
+
+#formTitle{
+	font-size:110%;
+	padding:1%;
+	color: #000000;
+	background:none;
+	position: relative;
+	display:inline-block;
+}
+
+.ElementDiv textarea{
+	text-align: left;
+}
+
+
+.selectpicker{
+	background-color: #f2f2f2;
+	text-align: center;
+	box-sizing: border-box;
+  border-style:solid;
+  border-width:thin;
+  border-color:#c0c0c0;
+}
+
+.bootstrap-select .btn {
+  background-color: #f2f2f2;
+  border-style: solid;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  color: black;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-transform: none;
+  text-align: center;
+  box-sizing: border-box;
+  border-style:solid;
+  border-width:thin;
+  border-color:#c0c0c0;
+}
+
+.bootstrap-select .btn:HOVER, .bootstrap-select .btn:FOCUS {
+	background-color: #f2f2f2;
+	box-shadow: none;
+}
+
+select::-ms-expand {
+  /* for IE 11 */
+  display: none;
+  background-color: #f2f2f2;
+}
+
+
+.bootstrap-select.btn-group .btn .filter-option {
+   text-align: center;   
+}
+
+
+.ui-datepicker {
+      z-index: 1600 !important; /* has to be larger than 1050 */
+    }

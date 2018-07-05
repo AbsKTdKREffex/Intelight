@@ -1,0 +1,108 @@
+/* YOUR CUSTOM STYLES */
+
+.CompanyLogo{
+	margin-top:-8%;
+width:200px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+margin: 0; 
+}
+.panelHeaderTitle{
+	color:#2E2E2E;
+}
+.panelTitle{
+	color:#9933CC;
+}
+.popOver{
+	color:#0d47a1;
+	font-size: 0.9rem;
+}
+.headerDetails{
+	font-weight: 500;
+}
+.mainContent{
+	padding-left: 20px;
+}
+.capitalizeText{
+text-transform:capitalize;
+}
+
+tdinput{
+width:80%;
+}
+
+.hidefa{
+display:none !important;
+}
+.fontElement{
+text-align: center;
+}
+.dataTables_filter{
+display:none;
+}
+
+.action-button{
+width:20px;
+margin-left:2px;
+cursor:pointer;
+}
+
+.HideThisElement, .hideThisRow{
+display:none;
+}
+
+.form-simple.font-small{
+font-size:0.8rem;
+}
+
+.form-simple.header{
+border-top-left-radius:.3rem;
+border-top-right-radius:.3rem;
+}
+
+.form-simpleinput[type=text]:focus:not([readonly]){
+border-bottom:1pxsolid#ff3547;
+-webkit-box-shadow:01px00#ff3547;
+box-shadow:01px00#ff3547;
+}
+
+.form-simpleinput[type=text]:focus:not([readonly])+label{
+color:#4f4f4f;
+}
+
+.form-simpleinput[type=password]:focus:not([readonly]){
+border-bottom:1pxsolid#ff3547;
+-webkit-box-shadow:01px00#ff3547;
+box-shadow:01px00#ff3547;
+}
+
+.form-simpleinput[type=password]:focus:not([readonly])+label{
+color:#4f4f4f;
+}
+
+.warningImage {
+width: 80pt;
+}
+
+.col-centered{
+float: none;
+margin: 0 auto;
+}
+
+th{
+text-align: center;
+}
+
+.dropdown-content{
+	height: 200px;
+}
+
+.FormInfoLables{
+	color: black;
+	font-weight: bold;
+}

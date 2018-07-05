@@ -1,0 +1,144 @@
+@CHARSET "ISO-8859-1";
+
+*{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.75pc;
+}
+
+#PageHeaderContent{
+	padding: 0;
+	height:4pc;
+	vertical-align: bottom;
+	border: thin solid white;
+}
+
+#CompanyLogo{
+	display:inline-block;
+	width: 10.8pc;
+	float: left;
+	padding: 0.1pc;
+	text-align: center;
+}
+
+#CompanyLogo img{
+	width: 100%;
+	padding: 0;
+}
+
+#MainMenuArea ul {
+	list-style-type: none;
+    margin-bottom:0;
+    margin-top:1.3pc;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#MainMenuArea li {
+    float: left;
+    width: 11pc;
+}
+
+#MainMenuArea li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding:6% 0% 6% 0%;
+    text-decoration: none;
+}
+
+#MainMenuArea li a:hover:not(.active) {
+    background-color: #111;
+}
+
+#MainMenuArea .active {
+    background-color: #4CAF50;
+}
+
+.HideThisElement{
+	display: none;
+}
+
+
+
+.SubMenuArea,
+.UserMenuArea{
+	padding:0;
+	margin-top:0.2pc;
+	margin-left:10.85pc;
+	vertical-align:text-top;
+	background-color: #ffffff;
+}
+
+.UserMenuArea ul{
+	list-style-type: none;
+    margin: 0;
+    vertical-align:text-top; 
+    padding: 0;
+    width: 11pc;
+    background-color: #ffffff;
+    text-align: center;
+    display: inline-block;
+    float: left;
+    position: relative;
+    
+}
+
+.SubMenuArea ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 11pc;
+    background-color: #ffcf36;
+    text-align: center;
+    display: inline-block;
+
+}
+
+.UserMenuArea ul li a,
+.SubMenuArea ul li a {
+    display: block;
+    color: #2a2a2a;
+    padding:6% 0% 6% 0%;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+.SubMenuArea ul .SubMenuHeaders{
+	background-color: #555;
+}
+
+.SubMenuArea ul .SubMenuHeaders a{
+	border-bottom-color: #c99416;
+	border-bottom-style: ridge;
+	border-bottom-width: medium;
+	color: white;
+}
+
+/* Change the link color on hover */
+.UserMenuArea ul li a:hover,
+.SubMenuArea ul li a:hover {
+    background-color: #111;
+    color: white;
+}
+
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.container{
+	padding-top: 1%;
+}
+
+#successMessage{
+	position: relative;
+	text-align: center;
+}

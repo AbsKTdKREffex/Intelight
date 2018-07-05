@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>MarooLights</title>
+    
+    <link rel="shortcut icon" href="img/TitleImage.png">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="hidden-sn pink-skin animated">
+	<main id="mainContainer">
+        <div class="container py-5">
+            <section class="section mt-3">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="form-header">
+                                    <h3>Sign In</h3>
+                                </div>
+								<form action="" id="LogInForm">
+								<div class="alert alert-warning HideThisElement" id="alertMessage" style="background-color: #ffbb33"></div>
+								<div class="alert alert-danger HideThisElement" id="errorMessage"></div>
+                                <!--Body-->
+                                <div class="md-form">
+                                    <i class="fa fa-user prefix"></i>
+                                    <input type="text" id="userId" name="userId" class="form-control" required="required">
+                                    <label for="userId">Your User Name</label>
+                                </div>
+                                <div class="md-form">
+                                    <i class="fa fa-lock prefix"></i>
+                                    <input type="password" id="password" name="password" class="form-control">
+                                    <label for="password" class="active">Your Password</label>
+                                </div>
+
+                                <div class="text-center">
+                                    <button class="btn btn-primary" id="SignInButton">Sign In</button>
+                                </div>
+                                <div class="text-center">
+                                	<p><a href="JSP/Admin/Employee/ForgotPassword.jsp">Forgot Your Password?</a></p>
+                                </div>
+								</form>
+                            </div>
+                        </div>
+                    </div>
+            	</div>
+            </section>
+        </div>
+    </main>	
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    
+    <script type="text/javascript">
+	$(function() {
+	    $("#SignInButton").click(function() {
+	    	var url = "LogIn"; // the script where you handle the form input.
+	        $.ajax({
+	               type: "POST",
+	               url: url,
+	               data: $("#LogInForm").serialize(), // serializes the form's elements.
+	               success: function(data)
+	               {
+	            	   if (data == 0)
+	            	   {
+	            		  	toastr.error('User Name or Password is Incorrect!');
+					   }
+	            	   else
+	            	   {
+							location='StartSession?department='+data;
+					   }
+	               }
+	             });
+	        return false; // avoid to execute the actual submit of the form.
+	    });
+	  });
+	</script>
+</body>
+</html>
